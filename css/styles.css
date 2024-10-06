@@ -50,7 +50,6 @@ img {
 }
 /*================Header================ */
 .header {
-    /* max-width: 318px; */
     margin: 0 auto;
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -201,7 +200,7 @@ img {
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 72px;
+   row-gap: 72px;
 }
 .advantages-item { 
  /* width: calc((100% - 72px) / 4); */
@@ -858,3 +857,49 @@ border-color: #4D5AE5;
  .rewiem-form-submit-button:hover {
     background-color: #404BBF;
    } 
+/*=================== Media 768 ================ */
+@media  (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    max-width: 766px;
+  }
+  .header-icon-menu-link {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .header-logo {
+    margin-right: 120px;
+    padding: 24px 0;
+  }
+  .link-contacs {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .section-hero {
+    max-width: 766px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+  .hero-button {
+    margin-top: 36px;
+  }
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
