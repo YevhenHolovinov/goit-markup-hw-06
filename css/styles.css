@@ -520,6 +520,138 @@ img {
     background-color: #31d0aa;
     fill: #f4f4fd;
 }
+/*===================== Modal Mobail Menu ============== */
+.modal-mobail-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-mobail-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.container-mobail-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.button-menu-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    line-height: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #E7E9FC;
+    fill: #2E2F42;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-menu-close:focus {
+    fill: #FFFFFF;
+    background-color: #404BBF;
+    border: none;
+}
+.button-menu-close:hover {
+    fill: #FFFFFF;
+    background-color: #404BBF;
+    border: none;
+}
+.button-menu-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-nav-mobail-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 72px 0 168px 16px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+.item-nav-span {
+    color: #404BBF;
+}
+.link-nav-mobail-menu {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-nav-mobail-menu:focus {
+    color: #404BBF;
+}
+.link-nav-mobail-menu:hover {
+    color: #404BBF;
+}
+.contacts-mobail-menu  {
+    margin-left: 16px;
+    margin-bottom: 48px;
+}
+.link-contacts-mobail-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.link-contacts-mobail-menu-tell {
+    color: #4D5AE5;
+}
+.link-contacts-mobail-menu {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-contacts-mobail-menu:focus {
+    color: #404BBF;
+}
+.link-contacts-mobail-menu:hover {
+    color: #404BBF;
+}
+.container-social-mobail-menu {
+    display: flex;
+}
+.list-social-mobail-menu {
+    display: flex;
+    gap: 40px;
+    margin-left: 16px;
+}
+.link-social-mobail-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background-color: #4D5AE5;
+     fill: #fff;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-social-mobail-menu:focus {
+    background-color: #404BBF;
+    fill: #fff;
+}
+.link-social-mobail-menu:hover {
+    background-color: #404BBF;
+    fill: #fff;
+}
 /*===================== Modal-backdrop ==================*/
 .modal-backdrop {
     display: flex;
