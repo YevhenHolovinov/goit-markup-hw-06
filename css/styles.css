@@ -64,7 +64,6 @@ img {
 }
 .header-logo {
     padding: 16px 0;
-    margin-right: 146px;
 }
 .header-icon-menu-link {
     line-height: 0;
@@ -537,6 +536,9 @@ img {
     position: absolute;
     width: 100%;
     height: 100%;
+    padding: 24px 16px;
+    max-width: 318px;
+    overflow: auto;
 }
 .button-menu-close {
     position: absolute;
@@ -570,11 +572,14 @@ img {
 .button-menu-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav-mobail-menu {
+    margin-top: 48px;
+    margin-bottom: 168px;
+}
 .list-nav-mobail-menu {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 72px 0 168px 16px;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -593,10 +598,9 @@ img {
     color: #404BBF;
 }
 .contacts-mobail-menu  {
-    margin-left: 16px;
     margin-bottom: 48px;
 }
-.link-contacts-mobail-menu {
+.list-contacts-mobail-menu {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -624,7 +628,6 @@ img {
 .list-social-mobail-menu {
     display: flex;
     gap: 40px;
-    margin-left: 16px;
 }
 .link-social-mobail-menu {
     display: flex;
@@ -667,14 +670,14 @@ img {
 }
 .modal {
     position: absolute;
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: auto;
     border-radius: 4px;
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     background-color: #fcfcfc;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -817,6 +820,8 @@ border-color: #4D5AE5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .rewiem-form-checkbox-label {
+    display: inline-flex;
+    align-items: center;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
@@ -829,6 +834,9 @@ border-color: #4D5AE5;
     letter-spacing: 0.04em;
     color: #4D5AE5;
     text-decoration: underline;
+}
+.rewiem-form-checkbox-label-link {
+    width: 231px;
 }
 .rewiem-form-submit-button {
     display: block;
@@ -865,7 +873,7 @@ border-color: #4D5AE5;
   .contacts-list {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 12px;
   }
   .header-logo {
     margin-right: 120px;
@@ -920,12 +928,17 @@ border-color: #4D5AE5;
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
     row-gap: 72px;
     column-gap: 24px;
     padding: 0 108px;
   }
   .text-container {
     margin: 0;
+    align-items: flex-start;
+  }
+  .social-container {
+    align-items: flex-start;
   }
   .footer-form-container {
     align-items: flex-start;
@@ -933,6 +946,14 @@ border-color: #4D5AE5;
   .form-footer {
     flex-direction: row;
     gap: 24px;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+  .rewiem-form-checkbox-label-link {
+    width: 100%;
   }
 }
 /*================== Media 1158 ================*/
@@ -958,6 +979,7 @@ border-color: #4D5AE5;
         line-height: 1.5;
     }
     .section-hero {
+        max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
@@ -1009,7 +1031,7 @@ border-color: #4D5AE5;
     }
     .footer-container {
         flex-wrap: nowrap;
-        padding: 0;
+        padding: 0 15px;
         gap: 0;
         align-items: baseline;
     }
